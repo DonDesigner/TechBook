@@ -56,7 +56,7 @@ class aAlbuns extends mAlbuns {
         try{
             $sql = sprintf($this->sqlSelectInner, $where, $order);
             if(!$rquery){
-                return $sql;;
+                return $sql;
             } else {
                 return $this->RunSelect($sql);
             }

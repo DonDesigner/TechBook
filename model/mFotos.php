@@ -9,50 +9,51 @@ require_once 'db/Connection.php';
 class mFotos extends db{
     
     private $id;
-    private $datahora;
+    private $album;
+    private $titulo;
     private $foto;
-    private $autorcom;
-    private $comentario;
+    private $ordemfoto;
     
     function getId() {
         return $this->id;
     }
 
-    function getDataHora() {
-        return $this->datahora;
+    function getAlbum() {
+        return $this->album;
+    }
+
+    function getTitulo() {
+        return $this->titulo;
     }
 
     function getFoto() {
         return $this->foto;
     }
 
-    function getAutorCom() {
-        return $this->autorcom;
-    }
-
-    function getComentario() {
-        return $this->comentario;
+    function getOrdemFoto() {
+        return $this->ordemfoto;
     }
 
     function setId($id) {
         $this->id = $id;
     }
 
-    function setDataHora($datahora) {
-        $this->datahora = $datahora;
+    function setAlbum($album) {
+        $this->album = $album;
+    }
+
+    function setTitulo($titulo) {
+        $this->titulo = $titulo;
     }
 
     function setFoto($foto) {
         $this->foto = $foto;
     }
 
-    function setAutorCom($autorcom) {
-        $this->autorcom = $autorcom;
+    function setOrdemFoto($ordemfoto) {
+        $this->ordemfoto = $ordemfoto;
     }
 
-    function setComentario($comentario) {
-        $this->comentario = $comentario;
-    }
 
 
 }

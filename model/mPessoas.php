@@ -1,5 +1,5 @@
 <?php
-require_once 'db/dbConnection';
+require_once 'db/dbConnection.php';
 /**
  * Description of mPessoas
  *
